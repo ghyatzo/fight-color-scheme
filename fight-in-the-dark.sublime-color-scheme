@@ -1,0 +1,163 @@
+{
+    "name":   "Fight in the Dark",
+    "author": "Camillo Schenone",
+
+    "variables" :{
+    	"tar":         "#252525",
+        "dark_smoke":  "#303030",
+    	"smoke":       "#555555",
+        "light_smoke": "#666666",
+    	"cloud":       "#7F7F7F",
+        "light_cloud": "#858585",
+
+        "messenger":   "#5F5F87",
+    	"arcadian":    "#5F875F",
+    	"persian":     "#5F87AF",
+    	"leonidas":    "#870000",
+        "thermopylae": "#7D490A",
+    	"xerxes":      "#9f5600",
+        // "xerxes":      "#9d5a0b",
+        "artobazan":   "rgba(163, 116, 39, .9)",
+    	"ephialtes":   "#005F5F",
+
+        "background":           "var(tar)",
+    	"background_lighter":   "var(dark_smoke)",
+
+    	"foreground_darker":    "var(dark_smoke)",
+        "foreground":           "var(cloud)",
+        "foreground_lighter":   "var(light_cloud)",
+
+        "accent_zero":          "var(thermopylae)",
+    	"accent_one":           "var(xerxes)",
+    	"accent_two":           "var(artobazan)"
+    },
+    "globals": {
+        "accent":                       "var(accent_one)",
+        "background":                   "var(background)",
+        "foreground":                   "var(foreground)",
+        "invisibles":                   "var(foreground_darker)",
+        "line_highlight":               "var(background_lighter)",
+
+        "guide":                        "var(foreground_darker)",
+        "active_guide":                 "var(accent_zero)",
+
+        "caret":                        "var(accent_one)",
+        "block_caret":                  "var(background_lighter)",
+        "block_caret_underline":        "var(foreground_darker)",
+        "block_caret_border":           "var(foreground_lighter)",
+        "block_caret_corner_radius":    "3",
+
+        "brackets_options":             "bold foreground",
+        "brackets_foreground":          "var(foreground_lighter)",
+        "bracket_contents_options":     "stippled_underline foreground",
+        "bracket_contents_foreground":  "var(foreground_lighter)",
+        "tags_options":                 "stippled_underline",
+        "tags_foreground":              "var(accent_one)",
+
+        "highlight":                    "var(arcadian)",
+        "find_highlight":               "var(background_lighter)",
+        "find_highlight_foreground":    "var(arcadian)",
+        "scroll_highlight":             "var(arcadian)",
+        "scroll_selected_highlight":    "var(arcadian)",
+
+        "inactive_selection_border":    "var(foreground_darker)",
+        "selection":                    "var(background_lighter)",
+        "selection_border":             "var(foreground_darker)",
+        "selection_foreground":         "var(persian)",
+        "selection_border_width":       "2",
+        "selection_corner_style":       "cut",
+        "selection_corner_radius":      "3",
+
+        "misspelling":                  "var(leonidas)",
+
+        "fold_marker":                  "var(foreground)",
+        "gutter":                       "var(background)",
+        "gutter_foreground":            "var(foreground)",
+        "gutter_foreground_highlight":  "var(accent_one)",
+
+        "line_diff_added":              "var(arcadian)",
+        "line_diff_deleted":            "var(leonidas)",
+        "line_diff_modified":           "var(accent_zero)",
+    },
+
+    "rules": [
+        {
+            "name":         "Comments",
+            "scope":        "comment, punctuation.definition.comment, invalid comment",
+            "foreground":   "var(smoke)",
+        }, 
+        {
+            "name":         "Escapes",
+            "scope":        "constant.character.escape, constant.other.placeholder",
+            "foreground":   "var(light_smoke)"
+        },
+        {
+            "name":         "Keywords",
+            "scope":        "keyword, keyword.control, keyword.declaration, punctuation.definition.keyword, keyword.other, storage.type, storage.modifier",
+            "foreground":   "var(foreground_lighter)",
+            "font_style":   "bold"
+        },
+        {
+            "name":         "Type hints",
+            "scope":        "support.type",
+            "foreground":   "var(smoke)"
+        },
+        {
+            "name":         "Punctuation",
+            "scope":        "punctuation",
+            "foreground":   "var(light_smoke)"
+        },
+        {
+            "name":         "Strings",
+            "scope":        "string",
+            "foreground":   "var(accent_two)"
+        },
+        {
+            "name":         "Macros and string identifiers",
+            "scope":        "variable.macro, punctuation.definition.macro, storage.type.string",
+            "foreground":   "var(accent_two)"
+        },
+        {
+            "name":         "Constants",
+            "scope":        "constant, punctuation.definition.constant",
+            "foreground":   "var(ephialtes)"
+        }, 
+        {
+            "name":         "Definitions",
+            "scope":        "entity.name - entity.name.tag",
+            "foreground":   "var(accent_one)"
+        },
+        // MARKUP
+        {
+            "name": "Italic Markup",
+            "scope": "markup.italic",
+            "font_style": "italic",
+        },
+        {
+            "name": "Bold Markup",
+            "scope": "markup.bold",
+            "font_style": "bold",
+        },
+        {
+            "name": "Italic Bold Markup",
+            "scope": "markup.bold markup.italic",
+            "font_style": "bold italic",
+        },
+        {
+            "name": "Headings",
+            "scope": "markup.heading",
+            "font_style": "bold",
+        },
+        {
+            "name": "Markup Lists",
+            "scope": "markup.list.unnumbered.bullet, markup.list.numbered.bullet",
+            "foreground": "var(accent_zero)",
+        },
+        {
+            "name": "Markup Quotes",
+            "scope": "markup.quote",
+            "foreground": "var(smoke)",
+            "font_style": "italic"
+        },
+    ]
+}
