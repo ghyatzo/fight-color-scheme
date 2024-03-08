@@ -1,0 +1,166 @@
+{
+    "name":   "Fight in the Light",
+    "author": "Camillo Schenone",
+
+    "variables" :{
+        "dark_smoke":   "#303030",
+        "smoke":        "#454545",
+        "light_smoke":  "#626262",
+        "dark_cloud":   "#7F7F7F",
+        "cloud":        "#909090",
+        "shade":        "#D5D5D5",
+        "sun":          "#F0F0F0",
+
+        "messenger":    "#5F5F87",
+        "arcadian":     "#5F875F",
+        "persian":      "#5F87AF",
+        "leonidas":     "#870000DD",
+        "thermopylae":  "#7D490A",
+        "xerxes":       "#AF5F00",
+        "artobazan":    "rgba(163, 116, 39, 1)",
+        "ephialtes":    "#005F5F",
+
+        "background":           "var(sun)",
+        "background_darker":    "var(shade)",
+        "background_darkest":   "var(cloud)",
+
+        "middleground":         "var(dark_cloud)",
+
+        "foreground_lightest":  "var(light_smoke)",
+        "foreground_lighter":   "var(smoke)",
+        "foreground":           "var(dark_smoke)",
+
+        "accent_zero":          "var(artobazan)",
+        "accent_one":           "var(leonidas)",
+        "accent_two":           "var(artobazan)"
+    },
+    "globals": {
+        "accent":                       "var(accent_one)",
+        "background":                   "var(background)",
+        "foreground":                   "var(foreground)",
+        "invisibles":                   "var(middleground)",
+        "line_highlight":               "var(background_darker)",
+
+        "guide":                        "var(middleground)",
+        "active_guide":                 "var(accent_two)",
+
+        "caret":                        "var(accent_one)",
+        "block_caret":                  "var(background_darker)",
+        "block_caret_underline":        "var(middleground)",
+        "block_caret_border":           "var(foreground_lighter)",
+        "block_caret_corner_radius":    "3",
+
+        "brackets_options":             "bold foreground",
+        "brackets_foreground":          "var(foreground_lighter)",
+        "bracket_contents_options":     "stippled_underline bold foreground",
+        "bracket_contents_foreground":  "var(foreground_lighter)",
+        "tags_options":                 "stippled_underline",
+        "tags_foreground":              "var(accent_one)",
+
+        "highlight":                    "var(arcadian)",
+        "find_highlight":               "var(background_darker)",
+        "find_highlight_foreground":    "var(arcadian)",
+        "scroll_highlight":             "var(arcadian)",
+        "scroll_selected_highlight":    "var(arcadian)",
+
+        "inactive_selection_border":    "var(background_darkest)",
+        "selection":                    "var(background_darker)",
+        "selection_border":             "var(background_darker)",
+        "selection_foreground":         "var(persian)",
+        "selection_border_width":       "2",
+        "selection_corner_style":       "cut",
+        "selection_corner_radius":      "3",
+
+        "misspelling":                  "var(leonidas)",
+
+        "fold_marker":                  "var(foreground)",
+        "gutter":                       "var(background)",
+        "gutter_foreground":            "var(foreground)",
+        "gutter_foreground_highlight":  "var(accent_one)",
+
+        "line_diff_added":              "var(arcadian)",
+        "line_diff_deleted":            "var(leonidas)",
+        "line_diff_modified":           "var(accent_zero)",
+    },
+
+    "rules": [
+        {
+            "name":         "Comments",
+            "scope":        "comment, punctuation.definition.comment, invalid comment",
+            "foreground":   "var(background_darkest)",
+        },
+        {
+            "name":         "Escapes",
+            "scope":        "constant.character.escape, constant.other.placeholder",
+            "foreground":   "var(foreground_lighter)"
+        },
+        {
+            "name":         "Keywords",
+            "scope":        "keyword, keyword.control, keyword.declaration, punctuation.definition.keyword, keyword.other, storage.type, storage.modifier",
+            "foreground":   "var(foreground_lightest)",
+            "font_style":   "bold"
+        },
+        {
+            "name":         "Type hints",
+            "scope":        "support.type",
+            "foreground":   "var(foreground_lightest)"
+        },
+        {
+            "name":         "Punctuation",
+            "scope":        "punctuation",
+            "foreground":   "var(middleground)"
+        },
+        {
+            "name":         "Strings",
+            "scope":        "string",
+            "foreground":   "var(accent_two)"
+        },
+        {
+            "name":         "Macros and string identifiers",
+            "scope":        "variable.macro, punctuation.definition.macro, storage.type.string",
+            "foreground":   "var(accent_two)"
+        },
+        {
+            "name":         "Constants",
+            "scope":        "constant, punctuation.definition.constant",
+            "foreground":   "var(ephialtes)"
+        },
+        {
+            "name":         "Definitions",
+            "scope":        "entity.name - entity.name.tag",
+            "foreground":   "var(accent_one)"
+        },
+        // MARKUP
+        {
+            "name": "Italic Markup",
+            "scope": "markup.italic",
+            "font_style": "italic",
+        },
+        {
+            "name": "Bold Markup",
+            "scope": "markup.bold",
+            "font_style": "bold",
+        },
+        {
+            "name": "Italic Bold Markup",
+            "scope": "markup.bold markup.italic",
+            "font_style": "bold italic",
+        },
+        {
+            "name": "Headings",
+            "scope": "markup.heading",
+            "font_style": "bold",
+        },
+        {
+            "name": "Markup Lists",
+            "scope": "markup.list.unnumbered.bullet, markup.list.numbered.bullet",
+            "foreground": "var(accent_zero)",
+        },
+        {
+            "name": "Markup Quotes",
+            "scope": "markup.quote",
+            "foreground": "var(middleground)",
+            "font_style": "italic"
+        },
+    ]
+}
