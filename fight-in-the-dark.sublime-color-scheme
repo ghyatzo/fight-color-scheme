@@ -99,8 +99,8 @@
         },
         {
             "name":         "Type hints",
-            "scope":        "support.type",
-            "foreground":   "var(smoke)"
+            "scope":        "support.type, support.function",
+            "foreground":   "var(light_smoke)",
         },
         {
             "name":         "Punctuation",
