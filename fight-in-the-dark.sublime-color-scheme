@@ -159,5 +159,10 @@
             "foreground": "var(smoke)",
             "font_style": "italic"
         },
+        {
+            "name": "Illegal-Invalid",
+            "scope": "invalid.illegal",
+            "foreground": "var(leonidas)"
+        }
     ]
 }
