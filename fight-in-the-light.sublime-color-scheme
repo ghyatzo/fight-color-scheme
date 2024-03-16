@@ -3,7 +3,7 @@
     "author": "Camillo Schenone",
 
     "variables" :{
-        "dark_smoke":   "#303030",
+        "dark_smoke":   "#323230",
         "smoke":        "#454545",
         "light_smoke":  "#626262",
         "dark_cloud":   "#7F7F7F",
@@ -11,14 +11,22 @@
         "shade":        "#D5D5D5",
         "sun":          "#F0F0F0",
 
-        "messenger":    "#5F5F87",
+        // "persian2":     "rgba(91,165,255, 1)",
+        // "persian3":     "rgba(134, 196, 255, 1)",
+        // "athens4":      "rgba(13,80,209,1)",
+        // "leonidas3":    "rgba(194,11,35,1)",
+        // "leonidas2":    "rgba(207,80,78,1)",
+
+        // "messenger":    "#5F5F87",
+        // "ephialtes":    "#005F5F",
+
+        "athens":       "rgba(10, 58, 158,1)",
         "arcadian":     "#5F875F",
         "persian":      "#5F87AF",
-        "leonidas":     "#870000DD",
+        "leonidas":     "#870000",
         "thermopylae":  "#7D490A",
         "xerxes":       "#AF5F00",
         "artobazan":    "rgba(163, 116, 39, 1)",
-        "ephialtes":    "#005F5F",
 
         "background":           "var(sun)",
         "background_darker":    "var(shade)",
@@ -30,9 +38,10 @@
         "foreground_lighter":   "var(smoke)",
         "foreground":           "var(dark_smoke)",
 
-        "accent_zero":          "var(artobazan)",
         "accent_one":           "var(leonidas)",
-        "accent_two":           "var(artobazan)"
+        "accent_two":           "var(artobazan)",
+        "accent_high":          "var(persian)",
+        "accent_low":           "var(athens)",
     },
     "globals": {
         "accent":                       "var(accent_one)",
@@ -42,7 +51,7 @@
         "line_highlight":               "var(background_darker)",
 
         "guide":                        "var(middleground)",
-        "active_guide":                 "var(accent_two)",
+        "active_guide":                 "var(accent_low)",
 
         "caret":                        "var(accent_one)",
         "block_caret":                  "var(background_darker)",
@@ -57,16 +66,16 @@
         "tags_options":                 "stippled_underline",
         "tags_foreground":              "var(accent_one)",
 
-        "highlight":                    "var(arcadian)",
+        "highlight":                    "var(accent_high)",
         "find_highlight":               "var(background_darker)",
-        "find_highlight_foreground":    "var(arcadian)",
-        "scroll_highlight":             "var(arcadian)",
-        "scroll_selected_highlight":    "var(arcadian)",
+        "find_highlight_foreground":    "var(accent_high)",
+        "scroll_highlight":             "var(accent_high)",
+        "scroll_selected_highlight":    "var(accent_high)",
 
         "inactive_selection_border":    "var(background_darkest)",
         "selection":                    "var(background_darker)",
         "selection_border":             "var(background_darker)",
-        "selection_foreground":         "var(persian)",
+        "selection_foreground":         "var(accent_high)",
         "selection_border_width":       "2",
         "selection_corner_style":       "cut",
         "selection_corner_radius":      "3",
@@ -80,7 +89,7 @@
 
         "line_diff_added":              "var(arcadian)",
         "line_diff_deleted":            "var(leonidas)",
-        "line_diff_modified":           "var(accent_zero)",
+        "line_diff_modified":           "var(artobazan)",
     },
 
     "rules": [
@@ -102,7 +111,7 @@
         },
         {
             "name":         "Type hints",
-            "scope":        "support.type",
+            "scope":        "support.type, support.function",
             "foreground":   "var(foreground_lightest)"
         },
         {
@@ -111,19 +120,14 @@
             "foreground":   "var(middleground)"
         },
         {
-            "name":         "Strings",
-            "scope":        "string",
-            "foreground":   "var(accent_two)"
-        },
-        {
             "name":         "Macros and string identifiers",
-            "scope":        "variable.macro, punctuation.definition.macro, storage.type.string",
+            "scope":        "string, variable.macro, punctuation.definition.macro, storage.type.string",
             "foreground":   "var(accent_two)"
         },
         {
             "name":         "Constants",
             "scope":        "constant, punctuation.definition.constant",
-            "foreground":   "var(ephialtes)"
+            "foreground":   "var(accent_low)"
         },
         {
             "name":         "Definitions",
@@ -154,7 +158,7 @@
         {
             "name": "Markup Lists",
             "scope": "markup.list.unnumbered.bullet, markup.list.numbered.bullet",
-            "foreground": "var(accent_zero)",
+            "foreground": "var(accent_two)",
         },
         {
             "name": "Markup Quotes",
