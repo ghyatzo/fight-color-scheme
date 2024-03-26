@@ -8,11 +8,18 @@
     	"smoke":       "#555555",
         "light_smoke": "#666666",
     	"cloud":       "#7F7F7F",
+        // "cloud":       "#9F9F9F",
         "light_cloud": "#858585",
 
-        "messenger":   "#5F5F87",
+
+        // "messenger":   "#5F5F87",
+    	// "ephialtes":   "#005F5F",
+        "ephialtes":    "#007878CC",
+
     	"arcadian":    "#5F875F",
-    	"persian":     "#5F87AF",
+    	// "persian":     "#5F87AFBB",
+        // "persian":     "#2980B9",
+
     	"leonidas":    "#870000",
         "thermopylae": "#7D490A",
     	"xerxes":      "#9f5600",
@@ -29,7 +36,9 @@
 
         "accent_zero":          "var(thermopylae)",
     	"accent_one":           "var(xerxes)",
-    	"accent_two":           "var(artobazan)"
+    	"accent_two":           "var(artobazan)",
+        "accent_high":          "var(arcadian)",
+        "accent_low":           "var(ephialtes)",
     },
     "globals": {
         "accent":                       "var(accent_one)",
