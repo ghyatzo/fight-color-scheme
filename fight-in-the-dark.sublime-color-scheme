@@ -14,18 +14,17 @@
 
         // "messenger":   "#5F5F87",
     	// "ephialtes":   "#005F5F",
-        "ephialtes":    "#007878CC",
+        "ephialtes":    "#007878DD",
 
     	"arcadian":    "#5F875F",
     	// "persian":     "#5F87AFBB",
-        // "persian":     "#2980B9",
+        "persian":     "#2980B9DD",
 
     	"leonidas":    "#870000",
         "thermopylae": "#7D490A",
     	"xerxes":      "#9f5600",
         // "xerxes":      "#9d5a0b",
         "artobazan":   "rgba(163, 116, 39, .9)",
-    	"ephialtes":   "#005F5F",
 
         "background":           "var(tar)",
     	"background_lighter":   "var(dark_smoke)",
@@ -63,11 +62,11 @@
         "tags_options":                 "stippled_underline",
         "tags_foreground":              "var(accent_one)",
 
-        "highlight":                    "var(arcadian)",
+        "highlight":                    "var(accent_high)",
         "find_highlight":               "var(background_lighter)",
-        "find_highlight_foreground":    "var(arcadian)",
-        "scroll_highlight":             "var(arcadian)",
-        "scroll_selected_highlight":    "var(arcadian)",
+        "find_highlight_foreground":    "var(accent_high)",
+        "scroll_highlight":             "var(accent_high)",
+        "scroll_selected_highlight":    "var(accent_high)",
 
         "inactive_selection_border":    "var(foreground_darker)",
         "selection":                    "var(background_lighter)",
@@ -129,7 +128,7 @@
         {
             "name":         "Constants",
             "scope":        "constant, punctuation.definition.constant",
-            "foreground":   "var(ephialtes)"
+            "foreground":   "var(accent_low)"
         }, 
         {
             "name":         "Definitions",
