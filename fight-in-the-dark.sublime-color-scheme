@@ -7,18 +7,18 @@
         "dark_smoke":  "#303030",
     	"smoke":       "#555555",
         "light_smoke": "#666666",
-    	"cloud":       "#7F7F7F",
+    	"cloud":       "#828282",
         // "cloud":       "#9F9F9F",
         "light_cloud": "#858585",
 
 
         // "messenger":   "#5F5F87",
     	// "ephialtes":   "#005F5F",
-        "ephialtes":    "#007878DD",
+        "ephialtes":    "#326868",
 
     	"arcadian":    "#5F875F",
-    	// "persian":     "#5F87AFBB",
-        "persian":     "#2980B9DD",
+    	"persian":     "#5F87AFBB",
+        // "persian":     "#2980B9DD",
 
     	"leonidas":    "#870000",
         "thermopylae": "#7D490A",
