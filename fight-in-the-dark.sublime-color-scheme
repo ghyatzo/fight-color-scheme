@@ -4,7 +4,8 @@
 
     "variables" :{
     	"tar":         "#252525",
-        "dark_smoke":  "#303030",
+        "ligth_tar":   "#303030",
+        "dark_smoke":  "#444444",
     	"smoke":       "#555555",
         "light_smoke": "#666666",
     	"cloud":       "#828282",
@@ -27,9 +28,11 @@
         "artobazan":   "rgba(163, 116, 39, .9)",
 
         "background":           "var(tar)",
-    	"background_lighter":   "var(dark_smoke)",
+    	"background_lighter":   "var(ligth_tar)",
 
-    	"foreground_darker":    "var(dark_smoke)",
+        "middleground":        "var(dark_smoke)",
+
+    	"foreground_darker":    "var(ligth_tar)",
         "foreground":           "var(cloud)",
         "foreground_lighter":   "var(light_cloud)",
 
@@ -107,7 +110,7 @@
         },
         {
             "name":         "Type hints",
-            "scope":        "support.type, support.function",
+            "scope":        "support.type, support.function, entity.other.attribute-name",
             "foreground":   "var(light_smoke)",
         },
         {
@@ -147,6 +150,17 @@
             "font_style": "bold",
         },
         {
+            "name": "Underline Markup",
+            "scope": "markup.underline, meta.link.reference - meta.link.reference.def, meta.link.inline",
+            "font_style": "underline",
+            "foreground": "var(persian)"
+        },
+        {
+            "name": "Strikethrough Markup",
+            "scope": "markup.strikethrough",
+            "foreground": "var(middleground)"
+        },
+        {
             "name": "Italic Bold Markup",
             "scope": "markup.bold markup.italic",
             "font_style": "bold italic",
@@ -166,6 +180,18 @@
             "scope": "markup.quote",
             "foreground": "var(smoke)",
             "font_style": "italic"
+        },
+        {
+            "name": "Markup Quotes Punct",
+            "scope": "punctuation.definition.blockquote",
+            "background": "var(background_lighter)",
+            "foreground": "var(background_lighter)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markup Raw Block",
+            "scope": "markup.raw",
+            "background": "var(background_lighter)"
         },
         {
             "name": "Illegal-Invalid",
