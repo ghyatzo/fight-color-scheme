@@ -3,7 +3,7 @@
     "author": "Camillo Schenone",
 
     "variables" :{
-    	"tar":         "#252525",
+    	"tar":         "#1F1F1F",
         "ligth_tar":   "#303030",
         "dark_smoke":  "#444444",
     	"smoke":       "#555555",
