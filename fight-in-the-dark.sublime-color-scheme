@@ -178,6 +178,12 @@
             "font_style": "italic"
         },
         {
+            "name": "Math Markup",
+            "scope": "punctuation.definition.math",
+            "font_style": "italic",
+            "foreground": "var(accent_high)"
+        },
+        {
             "name": "Markup Quotes Punct",
             "scope": "punctuation.definition.blockquote",
             "background": "var(background_lighter)",

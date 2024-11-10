@@ -166,5 +166,11 @@
             "foreground": "var(middleground)",
             "font_style": "italic"
         },
+        {
+            "name": "Math Markup",
+            "scope": "punctuation.definition.math",
+            "font_style": "italic",
+            "foreground": "var(arcadian)"
+        },
     ]
 }
