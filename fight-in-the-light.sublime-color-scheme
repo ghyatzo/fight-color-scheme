@@ -146,6 +146,17 @@
             "font_style": "bold",
         },
         {
+            "name": "Underline Markup",
+            "scope": "markup.underline, meta.link.reference - meta.link.reference.def, meta.link.inline",
+            "font_style": "underline",
+            "foreground": "var(persian)"
+        },
+        {
+            "name": "Strikethrough Markup",
+            "scope": "markup.strikethrough",
+            "foreground": "var(middleground)"
+        },
+        {
             "name": "Italic Bold Markup",
             "scope": "markup.bold markup.italic",
             "font_style": "bold italic",
@@ -172,5 +183,22 @@
             "font_style": "italic",
             "foreground": "var(arcadian)"
         },
+        {
+            "name": "Markup Quotes Punct",
+            "scope": "punctuation.definition.blockquote",
+            "background": "var(background_darkest)",
+            "foreground": "var(background_darkest)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markup Raw Block",
+            "scope": "markup.raw",
+            "background": "var(background_darkest)"
+        },
+        {
+            "name": "Illegal-Invalid",
+            "scope": "invalid.illegal",
+            "foreground": "var(leonidas)"
+        }
     ]
 }
