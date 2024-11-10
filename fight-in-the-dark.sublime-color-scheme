@@ -115,13 +115,18 @@
             "foreground":   "var(light_smoke)",
         },
         {
+            "name":         "Function Calls",
+            "scope":        "variable.function",
+            "foreground":   "var(foreground_lightest)"
+        },
+        {
             "name":         "Punctuation",
             "scope":        "punctuation",
             "foreground":   "var(light_smoke)"
         },
         {
             "name":         "Macros and string identifiers",
-            "scope":        "string, variable.macro, punctuation.definition.macro, storage.type.string",
+            "scope":        "string, variable.macro, punctuation.definition.macro, storage.type.string, punctuation.definition.expression",
             "foreground":   "var(accent_two)"
         },
         {
@@ -168,7 +173,7 @@
         },
         {
             "name": "Markup Lists",
-            "scope": "markup.list.unnumbered.bullet, markup.list.numbered.bullet",
+            "scope": "markup.list.unnumbered.bullet, markup.list.numbered.bullet, punctuation.definition.list_item",
             "foreground": "var(accent_zero)",
         },
         {

@@ -111,7 +111,12 @@
         },
         {
             "name":         "Type hints",
-            "scope":        "support.type, support.function",
+            "scope":        "support.type, support.function, entity.other.attribute-name",
+            "foreground":   "var(foreground_lightest)"
+        },
+        {
+            "name":         "Function Calls",
+            "scope":        "variable.function",
             "foreground":   "var(foreground_lightest)"
         },
         {
@@ -168,7 +173,7 @@
         },
         {
             "name": "Markup Lists",
-            "scope": "markup.list.unnumbered.bullet, markup.list.numbered.bullet",
+            "scope": "markup.list.unnumbered.bullet, markup.list.numbered.bullet, punctuation.definition.list_item",
             "foreground": "var(accent_two)",
         },
         {
