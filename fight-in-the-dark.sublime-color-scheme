@@ -126,7 +126,7 @@
         },
         {
             "name":         "Constants",
-            "scope":        "constant, punctuation.definition.constant",
+            "scope":        "constant, punctuation.definition.constant, support.constant",
             "foreground":   "var(accent_low)"
         }, 
         {

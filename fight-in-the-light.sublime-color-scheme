@@ -121,12 +121,12 @@
         },
         {
             "name":         "Macros and string identifiers",
-            "scope":        "string, variable.macro, punctuation.definition.macro, storage.type.string",
+            "scope":        "string, variable.macro, punctuation.definition.macro, storage.type.string, punctuation.definition.expression",
             "foreground":   "var(accent_two)"
         },
         {
             "name":         "Constants",
-            "scope":        "constant, punctuation.definition.constant",
+            "scope":        "constant, punctuation.definition.constant, support.constant",
             "foreground":   "var(accent_low)"
         },
         {
