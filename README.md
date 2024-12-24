@@ -17,13 +17,13 @@ as well as the luma color scheme. It strives to give maximum clarity and readabi
 
 ## Screenshots 
 Python `fight-in-the-dark`:
-![Screenshot 2024-09-07 at 17 44 48](https://github.com/user-attachments/assets/cd996fb4-3662-49e5-a542-f510d5b3c735)
+![dark-python](imgs/dark-python.png)
 Python `fight-in-the-light`:
-![Screenshot 2024-09-07 at 17 45 02](https://github.com/user-attachments/assets/93f35c4a-cf7b-42c0-a3b5-80e5e5e86281)
+![light-python](imgs/light-python.png)
 
 Rust `fight-in-the-dark`:
-![Screenshot 2024-09-07 at 17 40 13](https://github.com/user-attachments/assets/792f245c-32fd-484f-864f-106326a44e4c)
+![dark-rust](imgs/dark-rust.png)
 Rust `fight-in-the-light`:
-![Screenshot 2024-09-07 at 17 37 16](https://github.com/user-attachments/assets/73260619-ad16-48a3-8a32-32daef7bf08e)
+![light-rust](imgs/light-rust.png)
 
 
