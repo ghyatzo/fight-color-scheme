@@ -4,7 +4,7 @@
 
     "variables" :{
     	"tar":         "#1F1F1F",
-        "ligth_tar":   "#303030",
+        "light_tar":   "#303030",
         "dark_smoke":  "#444444",
     	"smoke":       "#555555",
         "light_smoke": "#707070",
@@ -27,11 +27,11 @@
         "artobazan":   "rgba(163, 116, 39, .9)",
 
         "background":           "var(tar)",
-    	"background_lighter":   "var(ligth_tar)",
+    	"background_lighter":   "var(light_tar)",
 
         "middleground":        "var(dark_smoke)",
 
-    	"foreground_darker":    "var(ligth_tar)",
+    	"foreground_darker":    "var(light_tar)",
         "foreground":           "var(cloud)",
         "foreground_lighter":   "var(light_cloud)",
 
