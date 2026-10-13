@@ -3,35 +3,32 @@
     "author": "Camillo Schenone",
 
     "variables" :{
-    	"tar":         "#1F1F1F",
-        "light_tar":   "#303030",
-        "dark_smoke":  "#444444",
-    	"smoke":       "#555555",
-        "light_smoke": "#707070",
-    	"cloud":       "#828282",
-        // "cloud":       "#9F9F9F",
-        "light_cloud": "#858585",
+    	"tar":         "rgb(31, 31, 31)",
+        "ligth_tar":   "rgb(48, 48, 48)",
+        "dark_smoke":  "rgb(68, 68, 68)",
+    	"smoke":       "rgb(85, 85, 85)",
+        "light_smoke": "rgb(112, 112, 112)",
+        "cloud":       "rgb(159, 159, 159)",
+        "light_cloud": "rgb(176, 176, 176)",
 
-        // "messenger":   "#5F5F87",
-    	// "ephialtes":   "#005F5F",
-        "ephialtes":    "#326868",
+        "messenger":   "rgb(95, 95, 135)",
+        "ephialtes":   "rgb(50, 104, 104)",
 
-    	"arcadian":    "#5F875F",
-    	"persian":     "#5F87AFBB",
+    	"arcadian":    "rgb(95, 135, 95)",
+    	"persian":     "rgba(95, 135, 175, 0.867)",
         // "persian":     "#2980B9DD",
 
-    	"leonidas":    "#870000",
-        "thermopylae": "#7D490A",
-    	"xerxes":      "#9f5600",
-        // "xerxes":      "#9d5a0b",
-        "artobazan":   "rgba(163, 116, 39, .9)",
+    	"leonidas":    "rgb(135, 0, 0)",
+        "thermopylae": "rgb(125, 73, 10)",
+    	"xerxes":      "rgb(191, 111, 0)",
+        "artobazan":   "rgba(163, 116, 39, 1)",
 
         "background":           "var(tar)",
-    	"background_lighter":   "var(light_tar)",
+    	"background_lighter":   "var(ligth_tar)",
 
         "middleground":        "var(dark_smoke)",
 
-    	"foreground_darker":    "var(light_tar)",
+    	"foreground_darker":    "var(ligth_tar)",
         "foreground":           "var(cloud)",
         "foreground_lighter":   "var(light_cloud)",
 
@@ -110,14 +107,39 @@
             "font_style":   "bold"
         },
         {
+            "name":         "Operators",
+            "scope":        "keyword.operator",
+            "foreground":   "var(light_smoke)"
+        },
+        {
             "name":         "Type hints",
-            "scope":        "support.type, support.function, entity.other.attribute-name",
+            "scope":        "support.type, entity.other.attribute-name",
             "foreground":   "var(light_smoke)",
         },
         {
             "name":         "Function Calls",
             "scope":        "variable.function",
-            "foreground":   "var(foreground_lightest)"
+            "foreground":   "var(foreground_lighter)"
+        },
+        {
+            "name":         "Built-in Functions",
+            "scope":        "support.function",
+            "foreground":   "var(foreground_lighter)"
+        },
+        {
+            "name":         "Parameters",
+            "scope":        "variable.parameter",
+            "foreground":   "var(light_smoke)"
+        },
+        {
+            "name":         "Language Variables",
+            "scope":        "variable.language",
+            "foreground":   "var(light_smoke)"
+        },
+        {
+            "name":         "Escapes",
+            "scope":        "constant.character.escape, constant.other.placeholder",
+            "foreground":   "var(foreground)"
         },
         {
             "name":         "Punctuation",
@@ -186,6 +208,11 @@
             "name": "Math Markup",
             "scope": "punctuation.definition.math",
             "font_style": "italic",
+            "foreground": "var(accent_high)"
+        },
+        {
+            "name": "Math Content",
+            "scope": "markup.math, string.other.math, text.math",
             "foreground": "var(accent_high)"
         },
         {

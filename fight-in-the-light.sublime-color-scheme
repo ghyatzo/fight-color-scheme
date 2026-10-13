@@ -3,13 +3,14 @@
     "author": "Camillo Schenone",
 
     "variables" :{
-        "dark_smoke":   "#323230",
-        "smoke":        "#454545",
-        "light_smoke":  "#626262",
-        "dark_cloud":   "#7F7F7F",
-        "cloud":        "#909090",
-        "shade":        "#D5D5D5",
-        "sun":          "#F0F0F0",
+        "dark_smoke":   "rgb(50, 50, 48)",
+        "smoke":        "rgb(69, 69, 69)",
+        "light_smoke":  "rgb(74, 74, 72)",
+        "fog":          "rgb(104, 104, 104)",
+        "dark_cloud":   "rgb(127, 127, 127)",
+        "cloud":        "rgb(144, 144, 144)",
+        "shade":        "rgb(228, 228, 228)",
+        "sun":          "rgb(240, 238, 236)",
 
         // "persian2":     "rgba(91,165,255, 1)",
         // "persian3":     "rgba(134, 196, 255, 1)",
@@ -17,16 +18,20 @@
         // "leonidas3":    "rgba(194,11,35,1)",
         // "leonidas2":    "rgba(207,80,78,1)",
 
-        // "messenger":    "#5F5F87",
-        // "ephialtes":    "#005F5F",
+        "messenger":    "rgb(95, 95, 135)",
+        "ephialtes":    "rgb(0, 95, 95)",
 
-        "athens":       "rgba(10, 58, 158,1)",
-        "arcadian":     "#5F875F",
-        "persian":      "#5F87AF",
-        "leonidas":     "#870000",
-        "thermopylae":  "#7D490A",
-        "xerxes":       "#AF5F00",
-        "artobazan":    "rgba(163, 116, 39, 1)",
+        "athens":           "rgba(10, 58, 158, 1)",
+        "arcadian":         "rgb(95, 135, 95)",
+        "persian":          "rgb(95, 135, 175)",
+        "leonidas":         "rgb(135, 0, 0)",
+        "thermopylae":      "rgb(125, 73, 10)",
+        "xerxes":           "rgb(175, 95, 0)",
+        "artobazan":        "rgba(163, 116, 39, 1)",
+
+        "arcadian-light":   "rgba(95, 135, 95, 0.2)",
+        "leonidas-light":   "rgba(135, 0, 0, 0.1)",
+        "xerxes-light":     "rgba(175, 95, 0, 0.5)",
 
         "background":           "var(sun)",
         "background_darker":    "var(shade)",
@@ -94,9 +99,15 @@
 
     "rules": [
         {
-            "name":         "Comments",
-            "scope":        "comment, punctuation.definition.comment, invalid comment",
+            "name":         "Comments Inline",
+            "scope":        "comment.line, comment.line punctuation.definition.comment, invalid comment",
             "foreground":   "var(background_darkest)",
+        },
+        {
+            "name":         "Comment Blocks",
+            "scope":        "comment.block, comment.block punctuation.definition.comment, invalid comment",
+            "foreground":   "var(arcadian)",
+            // "background":   "var(arcadian-light)",
         },
         {
             "name":         "Escapes",
@@ -189,6 +200,11 @@
             "foreground": "var(arcadian)"
         },
         {
+            "name": "Math Content",
+            "scope": "markup.math, string.other.math, text.math",
+            "foreground": "var(arcadian)"
+        },
+        {
             "name": "Markup Quotes Punct",
             "scope": "punctuation.definition.blockquote",
             "background": "var(background_darkest)",
@@ -198,12 +214,22 @@
         {
             "name": "Markup Raw Block",
             "scope": "markup.raw",
-            "background": "var(background_darkest)"
+            "background": "var(background_darker)"
         },
         {
             "name": "Illegal-Invalid",
             "scope": "invalid.illegal",
             "foreground": "var(leonidas)"
+        },
+        {
+            "name": "Markup Additions",
+            "scope": "markup.inserted",
+            "background": "var(arcadian-light)"
+        },
+        {
+            "name": "Markup Deletions",
+            "scope": "markup.deleted",
+            "background": "var(leonidas-light)"
         }
     ]
 }
